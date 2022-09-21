@@ -1,0 +1,169 @@
+@import url("utility.css");
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0.75rem 0;
+}
+
+
+/* Navbar */
+
+#navbar {
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    background: #333;
+    color: #fff;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 1rem;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+#navbar ul li a {
+    color: white;
+    padding: 0.75rem;
+    margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+    background: #93cb52;
+    border-radius: 5px;
+    color: blue;
+    font-weight: bold;
+}
+
+#navbar h1 {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+#navbar h1 span img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 200px;
+}
+
+/* Showcase */
+#showcase {
+    background: #333 url("img/earth.jpg") no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+}
+
+#showcase .showcase-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+    /* Overlay */
+    position: absolute;
+    top: 87px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* Features */
+.box {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+    text-align: center;
+}
+
+.box img {
+    margin-bottom: 10px;
+}
+
+
+/* Section: What We Do */
+
+#what .items {
+    display: flex;
+    padding: 1rem;
+}
+
+#what .items .item {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+#what .items .item img {
+    background: #93cb52;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+footer h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+/* About */
+#about {
+    padding: 20px;
+    color: white;
+    background-color: rgba(0,0,0,0.4);
+}
+
+#about p {
+    line-height: 28px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Contact */
+#contact {
+    display: flex;
+    padding: 20px;
+}
+
+#contact .map, #contact .contact-form {
+    flex: 1;
+}
+
+#contact .contact-form .form-group {
+    margin: 0.75rem ;
+}
+
+#contact .contact-form label {
+    display: block;
+}
+
+#contact .contact-form input, #contact .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+}
