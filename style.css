@@ -107,6 +107,10 @@ p {
     margin-bottom: 10px;
 }
 
+.clr {
+    clear: both;
+}
+
 
 /* Section: What We Do */
 
